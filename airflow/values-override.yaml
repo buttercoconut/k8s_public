@@ -1,0 +1,11 @@
+dags:
+  gitSync:
+    enabled: true
+    repo: git@github.com:buttercoconut/example_dags.git
+    branch: main
+    rev: HEAD
+    depth: 1
+    maxFailures: 0
+    subPath: dags
+    sshKeySecret: "airflow-ssh-git-secret"
+

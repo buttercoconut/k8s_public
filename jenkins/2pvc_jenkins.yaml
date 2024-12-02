@@ -1,0 +1,11 @@
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: pvc-jenkins
+spec:
+  accessModes:
+  - ReadWriteOnce
+  storageClassName: local-storage-jenkins
+  resources:
+    requests:
+      storage: 10Gi
